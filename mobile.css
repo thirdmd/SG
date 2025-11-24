@@ -1,0 +1,560 @@
+@media screen and (min-width: 993px) {
+  
+  .hero-title {
+    font-size: clamp(2.8rem, 8vw, 4.5rem) !important;
+    margin-bottom: 40px !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.1 !important;
+  }
+  
+  .hero-tagline {
+    font-size: 0.95rem !important;
+    letter-spacing: 5px !important;
+    margin-bottom: 20px !important;
+    opacity: 0.6 !important;
+  }
+  
+  .hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.2rem) !important;
+    font-weight: 400 !important;
+    margin-bottom: 40px !important;
+    max-width: 650px !important;
+    line-height: 1.7 !important;
+  }
+  
+  /* Make spans behave like they had <br> tags before */
+  .hero-subtitle span {
+    display: block !important;
+    margin-bottom: 5px !important;
+    white-space: nowrap !important;
+    font-size: inherit !important; /* Inherit from parent to ensure consistency */
+    letter-spacing: normal !important;
+    opacity: 0.8 !important; /* Make subtitles lighter */
+  }
+  
+  /* Make sure span font sizes don't get modified by JavaScript on desktop */
+  .hero-subtitle span {
+    font-size: inherit !important; /* Override any inline styles set by JavaScript */
+  }
+  
+  /* Restore button styling */
+  .hero .btn {
+    padding: 16px 30px !important;
+    font-size: 0.9rem !important;
+  }
+  
+  /* Ensure hero container is properly spaced */
+  .hero-inner {
+    margin-top: 40px !important; /* Original top margin */
+  }
+}
+
+/* Fix for iOS fullscreen issue - applies to all mobile devices */
+@media screen and (max-width: 992px) {
+  /* Ensure hero fills entire screen on all mobile devices */
+  .hero {
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Fix for iOS Safari 100vh issue */
+  @supports (-webkit-touch-callout: none) {
+    .hero {
+      height: -webkit-fill-available;
+      min-height: -webkit-fill-available;
+    }
+  }
+  
+  /* iOS-specific fixes */
+  .ios-device.hero {
+    min-height: -webkit-fill-available;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Fix for notch/safe area on modern iPhones */
+  .ios-device.hero::before {
+    width: 100vw;
+    height: 100vh;
+    height: -webkit-fill-available;
+  }
+  
+  /* Center content vertically and horizontally */
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 0;
+  }
+  
+  /* Make sure the teal background covers the whole screen */
+  .hero::before {
+    opacity: 1;
+  }
+  
+  /* Make "SG DERMATOLOGY & SURGICAL AESTHETICS" tagline smaller on mobile */
+  .hero-tagline {
+    font-size: 0.7rem;
+    opacity: 0.5;
+    letter-spacing: 3px;
+  }
+  
+  /* Make decorative lines proportionally smaller */
+  .hero-tagline::before, .hero-tagline::after {
+    width: 17px;
+    height: 1px;
+  }
+  
+  .hero-tagline::before {
+    margin-right: 10px;
+  }
+  
+  .hero-tagline::after {
+    margin-left: 10px;
+  }
+  
+  /* Ensure subtitle text fits on single lines */
+  .hero-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+  }
+  
+  .hero-subtitle span {
+    display: block !important;
+    margin-bottom: 7px !important;
+    white-space: nowrap !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    letter-spacing: normal !important;
+    font-weight: 300 !important;
+    opacity: 0.75 !important; /* Make subtitles lighter on mobile */
+  }
+}
+
+/* Tablet-sized devices */
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 25px;
+  }
+  
+  .hero-tagline {
+    font-size: 0.65rem; /* Smaller for mobile */
+    opacity: 0.45; /* More subtle */
+    letter-spacing: 3px;
+  }
+  
+  /* Make decorative lines proportionally smaller for tablets */
+  .hero-tagline::before, .hero-tagline::after {
+    width: 15px;
+    height: 1px;
+  }
+  
+  .hero-tagline::before {
+    margin-right: 9px;
+  }
+  
+  .hero-tagline::after {
+    margin-left: 9px;
+  }
+  
+  /* Ensure body text fits on one line per sentence on tablet */
+  .hero-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+  
+  /* Style for each line to ensure they don't wrap */
+  .hero-subtitle span {
+    display: block !important;
+    margin-bottom: 7px !important;
+    white-space: nowrap !important;
+    font-size: 0.8rem !important; /* Smaller to fit long sentences on one line */
+    line-height: 1.4 !important; /* Ensure consistent line height */
+    letter-spacing: normal !important; /* Reset letter spacing */
+    font-weight: 300 !important; /* Ensure consistent font weight */
+    opacity: 0.7 !important; /* Make subtitles lighter on tablet */
+  }
+  
+  /* Fix for the third line specifically - using the same values as above */
+  .hero-subtitle span:nth-child(3) {
+    font-size: 0.9rem !important; /* Exactly match other lines */
+    line-height: 1.4 !important;
+    letter-spacing: normal !important;
+    font-weight: 300 !important;
+  }
+}
+
+/* Smaller mobile devices */
+@media screen and (max-width: 576px) {
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-tagline {
+    font-size: 0.6rem; /* Further reduced for smaller screens */
+    margin-bottom: 15px;
+    opacity: 0.4; /* Even more subtle on small screens */
+    letter-spacing: 2.5px;
+  }
+  
+  /* Make decorative lines proportionally smaller for small mobile */
+  .hero-tagline::before, .hero-tagline::after {
+    width: 13px;
+    height: 1px;
+  }
+  
+  .hero-tagline::before {
+    margin-right: 8px;
+  }
+  
+  .hero-tagline::after {
+    margin-left: 8px;
+  }
+  
+  /* Further reduce font size for one-line sentences */
+  .hero-subtitle {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    padding: 0 5px;
+  }
+  
+  /* Adjust span styling for smaller screens */
+  .hero-subtitle span {
+    margin-bottom: 6px !important;
+    font-size: 0.68rem !important; /* Smaller to ensure single line fit */
+    line-height: 1.4 !important;
+    letter-spacing: normal !important;
+    font-weight: 300 !important;
+    white-space: nowrap !important;
+    opacity: 0.65 !important; /* Make subtitles lighter on small mobile */
+  }
+  
+  /* Fix for the third line specifically */
+  .hero-subtitle span:nth-child(3) {
+    font-size: 0.68rem !important; /* Exactly match other lines */
+    line-height: 1.4 !important;
+    letter-spacing: normal !important;
+    font-weight: 300 !important;
+    white-space: nowrap !important;
+    opacity: 0.65 !important; /* Make subtitles lighter on small mobile */
+  }
+  
+  /* Button adjustment */
+  .hero .btn {
+    padding: 12px 22px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 375px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-tagline {
+    font-size: 0.55rem; /* Smallest size for tiniest screens */
+    letter-spacing: 2px;
+    opacity: 0.35;
+  }
+  
+  /* Make decorative lines proportionally smallest for extra small screens */
+  .hero-tagline::before, .hero-tagline::after {
+    width: 12px;
+    height: 1px;
+  }
+  
+  .hero-tagline::before {
+    margin-right: 7px;
+  }
+  
+  .hero-tagline::after {
+    margin-left: 7px;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.7rem;
+    margin-bottom: 25px;
+  }
+  
+  .hero-subtitle span {
+    font-size: 0.62rem !important; /* Smallest size to ensure single line fit */
+    letter-spacing: -0.1px !important; /* Slight letter spacing reduction to help fit text */
+    line-height: 1.4 !important;
+    font-weight: 300 !important;
+    white-space: nowrap !important;
+    margin-bottom: 5px !important;
+    opacity: 0.6 !important; /* Make subtitles lighter on extra small screens */
+  }
+  
+  /* Fix for the third line specifically */
+  .hero-subtitle span:nth-child(3) {
+    font-size: 0.62rem !important; /* Exactly match other lines */
+    letter-spacing: -0.1px !important;
+    line-height: 1.4 !important;
+    font-weight: 300 !important;
+    white-space: nowrap !important;
+    opacity: 0.6 !important; /* Make subtitles lighter on extra small screens */
+  }
+  
+  .hero .btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+  }
+}
+
+/* About section mobile improvements across all breakpoints */
+@media screen and (max-width: 992px) {
+  .about {
+    padding: 80px 0 90px;
+  }
+  
+  .about-hero {
+    margin-bottom: 60px;
+    padding: 0 20px;
+  }
+  
+  .about-tagline {
+    font-size: 0.7rem;
+    letter-spacing: 2.5px;
+    padding: 0 35px;
+  }
+  
+  .about-tagline:before,
+  .about-tagline:after {
+    width: 18px;
+  }
+  
+  .about-main-title {
+    margin-bottom: 35px;
+  }
+  
+  .about-expertise {
+    margin-bottom: 60px;
+    padding: 0 20px;
+  }
+  
+  .expertise-title {
+    margin-bottom: 40px;
+  }
+  
+  .commitment-box {
+    padding: 35px 40px;
+    margin: 35px 20px;
+  }
+  
+  .about-quote {
+    padding: 20px 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 60px 0 70px;
+  }
+  
+  .about-hero {
+    margin-bottom: 50px;
+    padding: 0 15px;
+  }
+  
+  .about-tagline {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    padding: 0 30px;
+  }
+  
+  .about-tagline:before,
+  .about-tagline:after {
+    width: 15px;
+  }
+  
+  .about-expertise {
+    margin-bottom: 50px;
+    padding: 0 15px;
+  }
+  
+  .expertise-title {
+    margin-bottom: 35px;
+  }
+  
+  .commitment-box {
+    padding: 30px 30px;
+    margin: 30px 15px;
+    border-radius: 12px;
+  }
+  
+  .commitment-box::before {
+    width: 50px;
+    height: 2px;
+  }
+  
+  .about-quote {
+    padding: 15px 15px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about {
+    padding: 50px 0 60px;
+  }
+  
+  .about-hero {
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+  
+  .about-tagline {
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+    padding: 0 25px;
+    margin-bottom: 20px;
+  }
+  
+  .about-tagline:before,
+  .about-tagline:after {
+    width: 12px;
+  }
+  
+  .about-main-title {
+    margin-bottom: 30px;
+    line-height: 1.15;
+  }
+  
+  .about-expertise {
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+  
+  .expertise-title {
+    margin-bottom: 30px;
+  }
+  
+  .expertise-text {
+    margin-bottom: 30px;
+  }
+  
+  .commitment-box {
+    padding: 25px 20px;
+    margin: 25px 10px;
+    border-radius: 10px;
+  }
+  
+  .commitment-box::before {
+    width: 40px;
+    height: 2px;
+  }
+  
+  .about-quote {
+    padding: 10px 15px 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about {
+    padding: 40px 0 50px;
+  }
+  
+  .about-hero {
+    margin-bottom: 35px;
+    padding: 0 10px;
+  }
+  
+  .about-tagline {
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+  }
+  
+  .about-tagline:before,
+  .about-tagline:after {
+    width: 10px;
+  }
+  
+  .about-main-title {
+    margin-bottom: 25px;
+    line-height: 1.2;
+  }
+  
+  .about-expertise {
+    margin-bottom: 35px;
+    padding: 0 10px;
+  }
+  
+  .expertise-title {
+    margin-bottom: 25px;
+  }
+  
+  .expertise-text {
+    margin-bottom: 25px;
+  }
+  
+  .commitment-box {
+    padding: 20px 15px;
+    margin: 20px 5px;
+    border-radius: 8px;
+  }
+  
+  .commitment-box::before {
+    width: 35px;
+    height: 2px;
+  }
+  
+  .about-quote {
+    padding: 5px 10px 0;
+  }
+}
+
+/* Add spacing between service items for mobile view only */
+@media (max-width: 768px) {
+    .expandable-card.expanded .concern-services li,
+    .expandable-card.expanded .service-items li {
+        margin-bottom: 24px !important;
+        padding: 12px 0 !important;
+    }
+    
+    /* Fix bottom padding to prevent content cutoff */
+    .expandable-card.expanded .card-content {
+        padding-bottom: 80px !important;
+    }
+    
+    /* Add extra spacing to last concern/service group */
+    .expandable-card.expanded .concern-group:last-child,
+    .expandable-card.expanded .service-group:last-child {
+        margin-bottom: 40px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .expandable-card.expanded .concern-services li,
+    .expandable-card.expanded .service-items li {
+        margin-bottom: 22px !important;
+        padding: 10px 0 !important;
+    }
+    
+    /* Fix bottom padding to prevent content cutoff */
+    .expandable-card.expanded .card-content {
+        padding-bottom: 70px !important;
+    }
+    
+    /* Add extra spacing to last concern/service group */
+    .expandable-card.expanded .concern-group:last-child,
+    .expandable-card.expanded .service-group:last-child {
+        margin-bottom: 35px !important;
+    }
+}

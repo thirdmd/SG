@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2A7A7A">
+  <title>SG Dermatology & Surgical Aesthetics Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="#hero">
+          <img src="Assets/sg.png" alt="SG Clinic Logo">
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#promos">Promos</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+        <a href="#contact" class="btn">Book Appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-tagline">SG Dermatology & Surgical Aesthetics</div>
+      <h1 class="hero-title">This is beyond beauty.</h1>
+      <p class="hero-subtitle">
+        <span>It's hard to know what works for you— and that's why we're here.</span>
+        <span>No BS. Just real medical solutions that work.</span>
+        <span>Doctor-led care. Clear results. Zero guesswork.</span>
+      </p>
+      <a href="#services" class="btn btn-discover">Discover Our Services</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="home" class="about">
+    <div class="container">
+      <div class="about-hero">
+        <div class="about-tagline">WHO WE ARE</div>
+        <h1 class="about-main-title">Excellence is our standard,<br>not our goal.</h1>
+        <div class="about-intro">
+          <p class="about-intro-text">SG is a DOH-accredited medical clinic specializing in aesthetic care — with expertise and credentials that set us apart.</p>
+        </div>
+      </div>
+      <div class="about-expertise">
+        <h2 class="expertise-title">Unparalleled Expertise</h2>
+        <div class="expertise-content">
+          <p class="expertise-text">We've undergone rigorous review by the DOH, FDA, and PDEA — following every protocol with care and integrity.</p>
+          <div class="commitment-box">
+            <p>Our commitment to excellence means investing in cutting-edge Dermatological Technology and operating as a fully-equipped Ambulatory Surgical Clinic.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-quote">
+        <p class="quote-text"><em>At SG Clinic, we believe true beauty comes from exceptional care delivered by professionals who see beyond your skin to the person underneath.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Concerns Section -->
+  <section id="services" class="services">
+    <div class="services-expandable-container">
+      <!-- Services Card -->
+      <div class="expandable-card" id="services-card">
+        <div class="card-header">
+          <h3 class="card-title">SERVICES</h3>
+          <div class="card-subtitle-grid">
+            <div class="service-tag">Facial & Skin Care</div>
+            <div class="service-tag">Dermatology</div>
+            <div class="service-tag">Plastic Surgery</div>
+            <div class="service-tag">Outpatient Surgery</div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="services-list">
+            <!-- Facial & Skin Care -->
+            <div class="service-group">
+              <h4 class="service-title">FACIAL & SKIN CARE</h4>
+              <ul class="service-items">
+                <li>Cauterization</li>
+                <li>Fractional RF</li>
+                <li>RF Microneedling</li>
+                <li>Basic Microneedling</li>
+                <li>L.A.S.E.R Whitening <span class="service-detail">Small, Medium, Large</span></li>
+                <li>HOLLYWOOD L.A.S.E.R. Peel</li>
+                <li>Carbon LASER Rejuvenation</li>
+                <li>RF Firming <span class="service-detail">Small, Medium, Large</span></li>
+                <li>Skin Cleansing</li>
+                <li>Skin Cleansing Plus <span class="service-detail">Diamond Ultrapeel, RF Lift, Oxygeneo, Vitamin Infusion</span></li>
+                <li>Diode Laser Hair Removal <span class="service-detail">Upper Lip, Underarm/Bikini Line/Male Chin, Forearm/Upperarm/Beard/Pubic area, Knee down/Thighs, Full Arms, Full Legs</span></li>
+                <li>LIFETIME Diode Laser Hair Removal</li>
+                <li>DPL Laser <span class="service-detail">Small, Medium, Large</span></li>
+                <li>HIFU</li>
+                <li>Consultation</li>
+              </ul>
+            </div>
+            <!-- Dermatology -->
+            <div class="service-group">
+              <h4 class="service-title">DERMATOLOGY</h4>
+              <ul class="service-items">
+                <li>Thread Lifts <span class="service-detail">Porcupine, Nasal Bridge, Nasal Bridge & Anterior Spine, Forehead, Brows, Undereye, Cheeks, Neck</span></li>
+                <li>Botox <span class="service-detail">Germany, USA, Korea</span></li>
+                <li>Derma Fillers <span class="service-detail">USA, Europe, Korean</span></li>
+                <li>Filler Removal</li>
+                <li>Varicose Vein Injections</li>
+                <li>Keloid Intralesional Injections</li>
+                <li>Acne & Incision Injections</li>
+                <li>Cauterization</li>
+                <li>Basic Chemical Peeling <span class="service-detail">GAP, TCA</span></li>
+                <li>Advanced Chemical Peeling</li>
+                <li>Platelet Rich Plasma Therapy <span class="service-detail">Basic PRP, Advanced PRP, Scalp, Undereye, Lips</span></li>
+                <li>Injectables <span class="service-detail">Bio Cellular Stimulators (PLLA), Extra Cellular Vesicle – EXOSOME (Human Umbilical Cord), PDRN (Salmon DNA Fragments), HA Boosters</span></li>
+                <li>Mesodermal Injections Therapy <span class="service-detail">Hair Growth, Face V-Contour, Firming, Whitening, Fat Melting</span></li>
+                <li>Intravenous Vitamin Therapy <span class="service-detail">uGlow, uRejuv, uReplenish, uRevitalize, uSlim</span></li>
+                <li>HIFU – Doctor <span class="service-detail">Face, Face & Neck, Undereye</span></li>
+                <li>LASER Treatments <span class="service-detail">Panda Eyes, Acne Scars, Melasma, Tattoo Removal, Nevus of Ota, PI Hyperpigmentation, Hori's Nevus, Active Acne, Enlarged Pores, Others</span></li>
+                <li>Consultation w/ the Dermatologist</li>
+              </ul>
+            </div>
+            <!-- Plastic Reconstructive Aesthetics Surgery -->
+            <div class="service-group">
+              <h4 class="service-title">PLASTIC RECONSTRUCTIVE AESTHETICS SURGERY</h4>
+              <ul class="service-items">
+                <li>Surgeon's Threads</li>
+                <li>Face Lift</li>
+                <li>Mini Facelift</li>
+                <li>Forehead Lift</li>
+                <li>Neck Lift</li>
+                <li>Platysmaplasty</li>
+                <li>Blepharoplasty <span class="service-detail">Upper, Lower</span></li>
+                <li>Canthoplasty</li>
+                <li>Canthopexy</li>
+                <li>Cheek Augmentation</li>
+                <li>Chin Augmentation</li>
+                <li>Primary Rhinoplasty <span class="service-detail">Goretex, Cartilage</span></li>
+                <li>Revision Rhinoplasty <span class="service-detail">Goretex, Cartilage</span></li>
+                <li>Alarplasty</li>
+                <li>Tip Plasty <span class="service-detail">Tip & Alar Plasty</span></li>
+                <li>Otoplasty</li>
+                <li>Liposuction Per Area <span class="service-detail">5lbs, 15lbs</span></li>
+                <li>Abdominoplasty <span class="service-detail">with or without Lipo</span></li>
+                <li>Belt Lipectomy</li>
+                <li>Mastopexy</li>
+                <li>Breast Augmentation</li>
+                <li>Reduction Mammaplasty</li>
+                <li>Male Breast Surgery</li>
+                <li>Nipple Correction Surgery</li>
+                <li>Minor Breast Surgery</li>
+                <li>Gluteal Augmentation</li>
+                <li>Labiaplasty</li>
+                <li>Vaginal Tightening</li>
+                <li>Buccal Fat Removal</li>
+                <li>Fat Grafting & Scar Revision</li>
+                <li>Underarm Sweat Glands Removal</li>
+                <li>Scar Revision</li>
+                <li>Doctor's Call / Preferred Procedure</li>
+                <li>Consultation w/ Plastic Reconstructive-Aesthetics Surgeon</li>
+              </ul>
+            </div>
+            <!-- Minor & Outpatient Surgery -->
+            <div class="service-group">
+              <h4 class="service-title">MINOR & OUTPATIENT SURGERY</h4>
+              <ul class="service-items">
+                <li>Suturing</li>
+                <li>Circumcision</li>
+                <li>Excision Biopsy / Histopathology <span class="service-detail">Mole, Cyst, Nodule, Mass, Lipoma, Soft Tissue, Others</span></li>
+                <li>Cleft Lip <span class="service-detail">adult only</span></li>
+                <li>Ingrown Toe-Nail Surgery</li>
+                <li>Incision & Drainage <span class="service-detail">Boil, Pus, Others</span></li>
+                <li>Debridement</li>
+                <li>Ganglion Cyst removal</li>
+                <li>Sebaceous Cyst removal</li>
+                <li>Punch Biopsy</li>
+                <li>Consultation w/ the Surgeon</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Concerns Card -->
+      <div class="expandable-card" id="concerns-card">
+        <div class="card-header">
+          <h3 class="card-title">CONCERNS</h3>
+          <div class="card-subtitle-grid">
+            <div class="concern-tag">Skin Health</div>
+            <div class="concern-tag">Facial Structure</div>
+            <div class="concern-tag">Body Shape</div>
+            <div class="concern-tag">Hair & Sweat</div>
+            <div class="concern-tag">Lumps & Lesions</div>
+            <div class="concern-tag">Others</div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="concerns-list">
+            <!-- 1. Acne & Breakouts -->
+            <div class="concern-group">
+              <h4 class="concern-title">Acne & Breakouts</h4>
+              <ul class="concern-services">
+                <li>Acne & Incision Injections</li>
+                <li>Fractional RF</li>
+                <li>RF Microneedling</li>
+                <li>Basic Microneedling</li>
+                <li>Basic Chemical Peeling <span class="service-detail">GAP, TCA</span></li>
+                <li>Skin Cleansing</li>
+                <li>Skin Cleansing Plus <span class="service-detail">Diamond Ultrapeel, RF Lift, Oxygeneo, Vitamin Infusion</span></li>
+                <li>Platelet Rich Plasma Therapy <span class="service-detail">Basic PRP, Advanced PRP, Scalp</span></li>
+                <li>Injectables <span class="service-detail">EXOSOME, HA Boosters</span></li>
+                <li>Intravenous Vitamin Therapy <span class="service-detail">uGlow, uRejuv, uReplenish, uRevitalize, uSlim</span></li>
+                <li>LASER Treatments <span class="service-detail">Active Acne, Enlarged Pores, Acne Scars</span></li>
+              </ul>
+            </div>
+            <!-- 2. Scars & Texture -->
+            <div class="concern-group">
+              <h4 class="concern-title">Scars & Texture</h4>
+              <ul class="concern-services">
+                <li>RF Microneedling</li>
+                <li>Fractional RF</li>
+                <li>Carbon LASER Rejuvenation</li>
+                <li>Platelet Rich Plasma Therapy <span class="service-detail">Basic PRP, Advanced PRP, Scalp, Undereye, Lips</span></li>
+                <li>Injectables <span class="service-detail">HA Boosters, EXOSOME</span></li>
+                <li>LASER Treatments <span class="service-detail">Acne Scars, PI Hyperpigmentation, Enlarged Pores</span></li>
+                <li>Mesodermal Injections Therapy <span class="service-detail">Scar, Face V-Contour, Firming, Whitening</span></li>
+              </ul>
+            </div>
+            <!-- 3. Pigmentation & Uneven Skin Tone -->
+            <div class="concern-group">
+              <h4 class="concern-title">Pigmentation & Uneven Skin Tone</h4>
+              <ul class="concern-services">
+                <li>L.A.S.E.R Whitening <span class="service-detail">Small, Medium, Large</span></li>
+                <li>LASER Treatments <span class="service-detail">Melasma, PI Hyperpigmentation, Hori's Nevus, Nevus of Ota, Panda Eyes</span></li>
+                <li>Basic Chemical Peeling <span class="service-detail">GAP, TCA</span></li>
+                <li>Advanced Chemical Peeling</li>
+                <li>Platelet Rich Plasma Therapy <span class="service-detail">Basic PRP, Advanced PRP, Scalp, Undereye, Lips</span></li>
+                <li>Injectables <span class="service-detail">EXOSOME, HA Boosters</span></li>
+                <li>Intravenous Vitamin Therapy <span class="service-detail">uGlow, uRejuv, uReplenish, uRevitalize, uSlim</span></li>
+                <li>DPL Laser <span class="service-detail">Small, Medium, Large</span></li>
+              </ul>
+            </div>
+            <!-- 4. Aging & Sagging -->
+            <div class="concern-group">
+              <h4 class="concern-title">Aging & Sagging</h4>
+              <ul class="concern-services">
+                <li>Thread Lifts <span class="service-detail">Porcupine, Nasal Bridge, Nasal Bridge & Anterior Spine, Forehead, Brows, Undereye, Cheeks, Neck</span></li>
+                <li>Botox <span class="service-detail">Germany, USA, Korea</span></li>
+                <li>RF Firming <span class="service-detail">Small, Medium, Large</span></li>
+                <li>Platelet Rich Plasma Therapy <span class="service-detail">Basic PRP, Advanced PRP, Scalp, Undereye, Lips</span></li>
+                <li>HIFU - Doctor <span class="service-detail">Face, Face & Neck, Undereye</span></li>
+                <li>Injectables <span class="service-detail">Bio Cellular Stimulators (PLLA), EXOSOME, HA Boosters</span></li>
+                <li>Mesodermal Injections Therapy <span class="service-detail">Firming, Whitening</span></li>
+              </ul>
+            </div>
+            <!-- 5. Eye & Periocular -->
+            <div class="concern-group">
+              <h4 class="concern-title">Eye & Periocular</h4>
+              <ul class="concern-services">
+                <li>Blepharoplasty <span class="service-detail">Upper, Lower</span></li>
+                <li>Canthoplasty</li>
+                <li>Canthopexy</li>
+                <li>Thread Lifts <span class="service-detail">Undereye, Brows, Forehead</span></li>
+                <li>Platelet Rich Plasma Therapy <span class="service-detail">Undereye</span></li>
+                <li>Injectables <span class="service-detail">EXOSOME, HA Boosters</span></li>
+                <li>HIFU - Doctor <span class="service-detail">Undereye</span></li>
+                <li>LASER Treatments <span class="service-detail">Panda Eyes</span></li>
+                <li>Botox <span class="service-detail">Crow's Feet</span></li>
+              </ul>
+            </div>
+            <!-- 6. Facial Enhancement -->
+            <div class="concern-group">
+              <h4 class="concern-title">Facial Enhancement</h4>
+              <ul class="concern-services">
+                <li>Primary Rhinoplasty <span class="service-detail">Goretex, Cartilage</span></li>
+                <li>Revision Rhinoplasty <span class="service-detail">Goretex, Cartilage</span></li>
+                <li>Chin Augmentation</li>
+                <li>Cheek Augmentation</li>
+                <li>Face Lift</li>
+                <li>Mini Facelift</li>
+                <li>Neck Lift</li>
+                <li>Forehead Lift</li>
+                <li>Lip Reduction</li>
+                <li>Buccal Fat Removal</li>
+                <li>Blepharoplasty <span class="service-detail">Upper, Lower</span></li>
+                <li>Canthoplasty</li>
+                <li>Canthopexy</li>
+                <li>Alarplasty</li>
+                <li>Tip Plasty <span class="service-detail">Tip & Alar Plasty</span></li>
+                <li>Platysmaplasty</li>
+              </ul>
+            </div>
+            <!-- 7. Hair Removal & Sweat -->
+            <div class="concern-group">
+              <h4 class="concern-title">Hair Removal & Sweat</h4>
+              <ul class="concern-services">
+                <li>Diode Laser Hair Removal <span class="service-detail">Upper Lip, Underarm, Bikini Line, Male Chin, Forearm, Upperarm, Beard, Pubic area, Knee down, Thighs, Full Arms, Full Legs</span></li>
+                <li>LIFETIME Diode Laser Hair Removal</li>
+                <li>DPL Laser <span class="service-detail">Small, Medium, Large</span></li>
+                <li>Underarm Sweat Glands Removal</li>
+              </ul>
+            </div>
+            <!-- 8. Body Slimming & Contour -->
+            <div class="concern-group">
+              <h4 class="concern-title">Body Slimming & Contour</h4>
+              <ul class="concern-services">
+                <li>Liposuction Per Area <span class="service-detail">5lbs, 15lbs</span></li>
+                <li>Abdominoplasty <span class="service-detail">with or without Lipo</span></li>
+                <li>Belt Lipectomy</li>
+                <li>HIFU <span class="service-detail">Body</span></li>
+                <li>Buccal Fat Removal</li>
+                <li>Gluteal Augmentation</li>
+                <li>Breast Augmentation</li>
+                <li>Reduction Mammaplasty</li>
+                <li>Mastopexy</li>
+                <li>Male Breast Surgery</li>
+                <li>Minor Breast Surgery</li>
+                <li>Fat Grafting & Scar Revision</li>
+                <li>Mesodermal Injections Therapy <span class="service-detail">Fat-melting injection therapy</span></li>
+                <li>Intravenous Vitamin Therapy <span class="service-detail">uSlim</span></li>
+              </ul>
+            </div>
+            <!-- 9. Breast & Chest Aesthetic -->
+            <div class="concern-group">
+              <h4 class="concern-title">Breast & Chest Aesthetic</h4>
+              <ul class="concern-services">
+                <li>Breast Augmentation</li>
+                <li>Reduction Mammaplasty</li>
+                <li>Mastopexy</li>
+                <li>Male Breast Surgery</li>
+                <li>Minor Breast Surgery</li>
+                <li>Nipple Correction Surgery</li>
+              </ul>
+            </div>
+            <!-- 10. Veins / Vascular -->
+            <div class="concern-group">
+              <h4 class="concern-title">Veins / Vascular</h4>
+              <ul class="concern-services">
+                <li>Varicose Vein Injections</li>
+              </ul>
+            </div>
+            <!-- 11. Lesions, Cysts, Keloids -->
+            <div class="concern-group">
+              <h4 class="concern-title">Lesions, Cysts, Keloids</h4>
+              <ul class="concern-services">
+                <li>Warts Removal</li>
+                <li>Excision Biopsy / Histopathology <span class="service-detail">Mole, Cyst, Nodule, Mass, Lipoma, Soft Tissue, Others</span></li>
+                <li>Ganglion Cyst removal</li>
+                <li>Sebaceous Cyst removal</li>
+                <li>Keloid Intralesional Injections</li>
+                <li>Scar Revision</li>
+                <li>Cauterization</li>
+              </ul>
+            </div>
+            <!-- 12. Wounds & Burn Scars -->
+            <div class="concern-group">
+              <h4 class="concern-title">Wounds & Burn Scars</h4>
+              <ul class="concern-services">
+                <li>Suturing</li>
+                <li>Debridement</li>
+                <li>Scar Revision</li>
+                <li>Incision & Drainage <span class="service-detail">Boil, Pus, Others</span></li>
+              </ul>
+            </div>
+            <!-- 13. Hand / Nail -->
+            <div class="concern-group">
+              <h4 class="concern-title">Hand / Nail</h4>
+              <ul class="concern-services">
+                <li>Ingrown Toe-Nail Surgery</li>
+                <li>Ganglion Cyst removal</li>
+              </ul>
+            </div>
+            <!-- 14. Feminine Intimate -->
+            <div class="concern-group">
+              <h4 class="concern-title">Feminine Intimate</h4>
+              <ul class="concern-services">
+                <li>Labiaplasty</li>
+                <li>Vaginal Tightening</li>
+                <li>Platelet Rich Plasma Therapy <span class="service-detail">Intimate</span></li>
+                <li>Fat Grafting & Scar Revision</li>
+              </ul>
+            </div>
+            <!-- 15. Circumcision -->
+            <div class="concern-group">
+              <h4 class="concern-title">Circumcision</h4>
+              <ul class="concern-services">
+                <li>Circumcision</li>
+              </ul>
+            </div>
+            <!-- 16. Congenital Repair -->
+            <div class="concern-group">
+              <h4 class="concern-title">Congenital Repair</h4>
+              <ul class="concern-services">
+                <li>Cleft Lip <span class="service-detail">Adult only</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promos Section -->
+  <section id="promos" class="promos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tagline">Limited Time Offers</div>
+        <h2 class="section-title">Special promotions just for you</h2>
+      </div>
+      
+      <div class="promos-grid">
+        <div class="promo-card">
+          <div class="promo-header">
+            <h3 class="promo-title">First-Time Client Special</h3>
+            <div class="promo-price">
+              <span class="original-price">₱3,500</span>
+              <span class="discounted-price">₱1,500</span>
+            </div>
+          </div>
+          <div class="promo-content">
+            <p class="promo-description">Unlimited Warts Removal</p>
+            <p class="promo-urgency">Limited slots available! Don't miss this rare opportunity to transform your skin.</p>
+            <div class="promo-button">
+              <a href="#contact" class="btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="promo-card">
+          <div class="promo-header">
+            <h3 class="promo-title">Buy 1 Take 1 Special</h3>
+            <div class="promo-price">
+              <span class="promo-badge">2-FOR-1</span>
+              <span class="discounted-price">₱3,000</span>
+            </div>
+          </div>
+          <div class="promo-content">
+            <p class="promo-description">DPL Laser Whitening</p>
+            <p class="promo-urgency">Only 5 slots left for this month! Pay for one session and get another absolutely FREE.</p>
+            <div class="promo-button">
+              <a href="#contact" class="btn">Claim Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="promo-card">
+          <div class="promo-header">
+            <h3 class="promo-title">This Week Only!</h3>
+            <div class="promo-price">
+              <span class="promo-badge">FREE</span>
+            </div>
+          </div>
+          <div class="promo-content">
+            <p class="promo-description">Dermatology & Plastic Surgery Consultation</p>
+            <p class="promo-urgency">Schedule now before you miss your chance. This offer is valid for this week only.</p>
+            <div class="promo-button">
+              <a href="#contact" class="btn">Reserve Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="schedule">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tagline">Doctor's Schedule</div>
+        <h2 class="section-title">Availability that works for you</h2>
+      </div>
+      
+      <div class="schedule-tabs">
+        <button class="schedule-tab active" data-tab="plastic">Plastic Surgery</button>
+        <button class="schedule-tab" data-tab="dermatology">Dermatology</button>
+        <button class="schedule-tab" data-tab="outpatient">Outpatient Surgery</button>
+      </div>
+      
+      <div class="schedule-content active" id="plastic-tab">
+        <div class="schedule-day">
+          <div class="day">Tuesday</div>
+          <div class="time">4:00pm to 7:00pm</div>
+        </div>
+        <div class="schedule-day">
+          <div class="day">Thursday</div>
+          <div class="time">4:00pm to 7:00pm</div>
+        </div>
+      </div>
+      
+      <div class="schedule-content" id="dermatology-tab">
+        <div class="schedule-day">
+          <div class="day">Monday</div>
+          <div class="time">11:00am to 7:00pm</div>
+        </div>
+        <div class="schedule-day">
+          <div class="day">Thursday</div>
+          <div class="time">11:00am to 3:00pm</div>
+        </div>
+        <div class="schedule-day">
+          <div class="day">Friday</div>
+          <div class="time">11:00am to 7:00pm</div>
+        </div>
+        <div class="schedule-day">
+          <div class="day">Saturday</div>
+          <div class="time">11:00am to 3:00pm</div>
+        </div>
+      </div>
+      
+      <div class="schedule-content" id="outpatient-tab">
+        <div class="schedule-day">
+          <div class="day">Wednesday</div>
+          <div class="time">4:00pm to 8:00pm</div>
+        </div>
+        <div class="schedule-day">
+          <div class="day">Saturday</div>
+          <div class="time">4:00pm to 8:00pm</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tagline">Patient Stories</div>
+        <h2 class="section-title">You don't have to take our word for it</h2>
+        <p class="section-subtitle">What our clients say matters most.</p>
+      </div>
+      
+      <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+          <div class="testimonial-quote">SG Clinic changed my life. The attention to detail and the care they provide is unlike anything I've experienced before. I felt safe, valued, and understood throughout my entire journey.</div>
+          <div class="testimonial-author">Maria Santos</div>
+          <div class="testimonial-role">Rhinoplasty Patient</div>
+        </div>
+        
+        <div class="testimonial-slide">
+          <div class="testimonial-quote">I've been to many dermatology clinics, but SG stands apart. Their medical expertise combined with their genuine concern for their patients makes them the best in the business.</div>
+          <div class="testimonial-author">John Reyes</div>
+          <div class="testimonial-role">Acne Treatment Patient</div>
+        </div>
+        
+        <div class="testimonial-slide">
+          <div class="testimonial-quote">The staff at SG Clinic treats you like family. They take the time to explain everything and make sure you're comfortable. Their results speak for themselves.</div>
+          <div class="testimonial-author">Ana Gonzales</div>
+          <div class="testimonial-role">Laser Treatment Patient</div>
+        </div>
+        
+        <div class="testimonial-navigation">
+          <div class="testimonial-dot active" data-slide="0"></div>
+          <div class="testimonial-dot" data-slide="1"></div>
+          <div class="testimonial-dot" data-slide="2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tagline">Get In Touch</div>
+        <h2 class="section-title">Begin your journey with us</h2>
+        <p class="section-subtitle">We're here to answer your questions and help you schedule your appointment.</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>UGF Bridgeway, Festival Mall Alabang</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p>0907-687-7777 / 0920-910-8785 / 02-82436870</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>hello@sgclinic.ph</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Hours</h4>
+              <p>Monday - Sunday: 10:00am - 9:00pm</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Book an Appointment</h3>
+          <form id="appointmentForm">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number" required>
+            </div>
+            <div class="form-group">
+              <select name="service" id="service" class="form-control" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="Facial & Skin Care">Facial & Skin Care</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="Plastic Reconstructive Aesthetics Surgery">
+                  Plastic Reconstructive Aesthetics Surgery
+                </option>
+                <option value="Minor & Outpatient Surgery">Minor & Outpatient Surgery</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea name="message" class="form-control" placeholder="Your Message or Special Requirements" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Book Appointment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">
+            <img src="Assets/sg.png" alt="SG Clinic Logo">
+          </div>
+          <p class="footer-desc">SG is a DOH-accredited medical clinic specializing in aesthetic care.</p>
+                              <div class="social-links">
+                        <a href="https://www.facebook.com/SGascPH" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/sgclinic.ph/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">About</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#schedule">Doctor's Schedule</a></li>
+            <li><a href="#promos">Promos</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Facial & Skin Care</a></li>
+            <li><a href="#">Dermatology</a></li>
+            <li><a href="#">Plastic Reconstructive Surgery</a></li>
+            <li><a href="#">Minor & Outpatient Surgery</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Credentials</h4>
+          <ul class="footer-links">
+            <li><a href="#">DOH Accreditation</a></li>
+            <li><a href="#">FDA Certifications</a></li>
+            <li><a href="#">Our Doctors</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 SG Dermatology & Surgical Aesthetics Clinic. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="scripts.js"></script>
+  
+  <!-- EmailJS Integration -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "K4qsGYMqFQp0wFFQ7",
+      });
+   })();
+  </script>
+  <script type="text/javascript">
+    document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      emailjs.sendForm('third.camacho7', 'template_92m2vok', this)
+                    .then(function() {
+                // Browser alert removed - using custom notification instead
+          document.getElementById('appointmentForm').reset(); // Reset the form after successful submission
+                    }, function(error) {
+                // Browser alert removed - using custom notification instead
+          console.log('EmailJS error:', error);
+        });
+    });
+  </script>
+</body>
+</html>
